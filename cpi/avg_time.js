@@ -31,6 +31,7 @@ function avg_time(arr){//循环使用yeid 会快一些，待改进
         }
         var json={};
         json.id=item.id;
+        json.big=item.big;
         json.base=item.base;
         json.avg=item.avg;
         json.middle=item.middle;
