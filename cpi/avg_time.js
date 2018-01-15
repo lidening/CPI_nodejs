@@ -13,6 +13,7 @@ function avg_time(arr){//循环使用yeid 会快一些，待改进
                 avg_arr_time.push(avg_time);
             });
             var json_pri={};
+            //json_pri.code=item.detaile[0].code;//code为规格品码
             json_pri.code=item.id;
             json_pri.price=avg_arr_time;
             arr_detaile.push(json_pri);
@@ -34,6 +35,7 @@ function avg_time(arr){//循环使用yeid 会快一些，待改进
         json.big=item.big;
         json.base=item.base;
         json.avg=item.avg;
+        json.cost=item.cost;
         json.middle=item.middle;
         json.small=item.small;
         json.level=item.level;
